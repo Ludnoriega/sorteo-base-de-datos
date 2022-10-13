@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SORTEO</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">USUARIO</th>
+                <th scope="col">ROL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% usuaio.forEach((users)=> { %>
+            <tr>
+                <td> <%= users.id %></td>
+                <td> <%= users.usuarioo %></td>
+                <td> <%= users.rol %></td>
+            </tr>
+        <% }) %>
+        </tbody>
+    </table>
+    <div class="bogton2">
+        <button type="reset" id="btn" class="boton2" ><a href="agregar_alumno" class="volver">REGRESAR</a></button>
+    </div>
+</body>
+</html>
